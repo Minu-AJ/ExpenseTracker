@@ -1,0 +1,195 @@
+schema:User
+
+attributes:username, password, email
+
+1) Api for creating a new account
+
+   url: http://127.0.0.1:8000/api/register/
+
+   method: post
+
+   body:{username,password,email}
+
+   authentication:nill
+
+   status:completed
+
+2) Api for fetching token
+
+    url: http://127.0.0.1:8000/api/token/
+
+    method:post
+
+    body:{username,password}
+
+    authentication:nill
+
+    status:completed
+
+
+----------------------------------------------------end auth--------------------------------------------------
+
+
+schema:Expense
+
+attributes:title,amount,category,owner,priority
+
+1) api for listing all expenses
+
+    url:http://127.0.0.1:8000/api/expenses/
+
+    method:get
+
+    body:nill
+
+    authentication:token
+
+    status:completed
+
+2) api for adding expense
+
+    url:http://127.0.0.1:8000/api/expenses/
+
+    method:post
+
+    body:{title,amount,category,priority}
+
+    authentication:token
+
+    status:completed
+
+3) api for retrieving expense
+
+    url:http://127.0.0.1:8000/api/expenses/{id}
+
+    method:get
+
+    body:nill
+
+    authentication:token
+
+    status:completed
+
+4) api for updating expense
+
+    url:http://127.0.0.1:8000/api/expenses/{id}
+
+    method:put
+
+    body:{title,amount,category,priority}
+
+    authentication:token
+
+    status:completed
+
+5) api for deleting expense
+
+    url:http://127.0.0.1:8000/api/expenses/{id}
+
+    method:delete
+
+    body:nill
+
+    authentication:token
+
+    status:completed
+
+6) api for listing summary of expenses
+
+    url:http://127.0.0.1:8000/api/expenses/summary/
+
+    method:get
+
+    body:nill
+
+    authentication:token
+
+    status:completed
+
+
+
+
+----------------------------------------------------end expense--------------------------------------------------
+
+schema:Income
+
+attributes:title,amount,category,owner
+
+1) api for listing all incomes
+
+    url:http://127.0.0.1:8000/api/incomes/
+
+    method:get
+
+    body:nill
+
+    authentication:token
+
+    status:completed
+
+2) api for adding incomes
+
+    url:http://127.0.0.1:8000/api/incomes/
+
+    method:post
+
+    body:{title,amount,category}
+
+    authentication:token
+
+    status:completed
+
+3) api for reteriving income
+
+    url:http://127.0.0.1:8000/api/incomes/{id}
+
+    method:get
+
+    body:nill
+
+    authentication:token
+
+    status:completed
+
+4) api for updating income
+
+    url:http://127.0.0.1:8000/api/incomes/{id}
+
+    method:put
+
+    body:{title,amount,category}
+
+    authentication:token
+
+    status:completed
+
+5) api for deleting income
+
+    url:http://127.0.0.1:8000/api/incomes/{id}
+
+    method:delete
+
+    body:nill
+
+    authentication:token
+
+    status:completed
+
+6) api for listing the summary of incomes
+
+    url:http://127.0.0.1:8000/api/incomes/summary/
+
+    method:get
+
+    body:nill
+
+    authentication:token
+
+    status:completed
+
+
+
+
+
+
+
